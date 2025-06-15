@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+{
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+=======
+{
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+>>>>>>> 2a5cfb11b1f7a2b37c54382ff31e48c7874824e7
+} 
