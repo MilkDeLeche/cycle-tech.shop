@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Instagram } from 'lucide-react';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Gallery: React.FC = () => {
+  useScrollToTop();
+
   useEffect(() => {
     // Add Behold widget script
     const script = document.createElement('script');

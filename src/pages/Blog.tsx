@@ -2,8 +2,11 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { FeatureSteps } from '../components/ui/feature-steps';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Blog: React.FC = () => {
+  useScrollToTop();
+
   const features = [
     { 
       step: 'Paso 1', 

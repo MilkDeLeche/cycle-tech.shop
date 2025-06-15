@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Contact: React.FC = () => {
+  useScrollToTop();
+
   const [formData, setFormData] = useState({
     name: '',
     subject: '',
@@ -170,6 +174,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

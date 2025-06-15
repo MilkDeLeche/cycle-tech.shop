@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const About: React.FC = () => {
+  useScrollToTop();
+
   const [isVisible, setIsVisible] = useState<boolean[]>([]);
 
   useEffect(() => {
@@ -98,7 +101,7 @@ const About: React.FC = () => {
           }`}
         >
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[url('/images/cross-country-biker-relaxing-on-the-top-of-the-mou-2025-01-16-23-53-25-utc.jpg')] bg-cover md:bg-contain bg-center bg-no-repeat"></div>
+            <div className="absolute inset-0 bg-[url('/images/plazaexodo.jpg')] bg-cover md:bg-contain bg-center bg-no-repeat"></div>
           </div>
         </section>
 

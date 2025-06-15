@@ -4,8 +4,11 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const Home: React.FC = () => {
+  useScrollToTop();
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     loop: true,
@@ -89,22 +92,22 @@ const Home: React.FC = () => {
 
   const instagramPosts = [
     {
-      image: "https://behold.pictures/198oAnkkTocMgW8yjwOtMXZ3foT2/d1TYCPl73xpB0vwY3jJY/18059500499471868/medium.jpg",
-      alt: "Specialized Allez",
-      description: "¡Nos llegó esta chulada de bici de ruta!🔥",
-      link: "https://www.instagram.com/p/DI2BiMBsFL3/"
+      image: "/images/ct1.png",
+      alt: "Producto Destacado 1",
+      description: "¡Descubre nuestra selección premium de bicicletas!",
+      link: "/gallery"
     },
     {
-      image: "https://behold.pictures/198oAnkkTocMgW8yjwOtMXZ3foT2/d1TYCPl73xpB0vwY3jJY/18112886668466799/medium.jpg",
-      alt: "Calas nuevas",
-      description: "¡Ya llegaron calas nuevas!🚴🏽🚵🏽",
-      link: "https://www.instagram.com/p/DI1cn-6RvOH/"
+      image: "/images/ct2.png",
+      alt: "Producto Destacado 2",
+      description: "Equipamiento de alta calidad para ciclistas exigentes",
+      link: "/gallery"
     },
     {
-      image: "https://behold.pictures/198oAnkkTocMgW8yjwOtMXZ3foT2/d1TYCPl73xpB0vwY3jJY/18471094426067946/medium.jpg",
-      alt: "TREK Lexa",
-      description: "Disponibles en tienda 🔥🚴🏽🚴🏻‍♀️",
-      link: "https://www.instagram.com/p/DIrlAEoR1MT/"
+      image: "/images/ct3.png",
+      alt: "Producto Destacado 3",
+      description: "Accesorios y repuestos para tu bicicleta",
+      link: "/gallery"
     }
   ];
 
