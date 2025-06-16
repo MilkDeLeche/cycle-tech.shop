@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Instagram } from 'lucide-react';
@@ -29,16 +29,15 @@ const Gallery: React.FC = () => {
           <p className="text-noir-600 mb-12 max-w-2xl">
             Síguenos en Instagram y descubre nuestras últimas creaciones y aventuras.
           </p>
-          
           <div className="w-full">
-            <behold-widget feed-id="27dhdYeqGyj0JarchJLk"></behold-widget>
-            </div>
+            <div data-behold-id="27dhdYeqGyj0JarchJLk"></div>
+          </div>
 
           <div className="mt-12 text-center">
-            <a 
-              href="https://www.instagram.com/matamoroscyclingshop/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
+            <a
+              href="https://www.instagram.com/cycletech.bikes/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
             >
               <Instagram size={20} />
