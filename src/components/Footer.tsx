@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/about" className="text-sm sm:text-base text-noir-500 hover:text-noir-900 transition-colors duration-300">
-                  Nosotros
+                  Servicios
                 </Link>
               </li>
               <li>
