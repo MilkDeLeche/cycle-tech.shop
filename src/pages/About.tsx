@@ -108,6 +108,7 @@ const About: React.FC = () => {
               alt="Cycle Tech Logo"
               loading="eager"
               fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
@@ -127,7 +128,7 @@ const About: React.FC = () => {
                   } items-center gap-8 md:gap-16 ${
                     !isMobile ? 'transition-all duration-1000' : ''
                   } ${
-                    !isMobile && isVisible[index + 2] ? 'translate-y-0 opacity-100' : !isMobile ? 'translate-y-10 opacity-0' : ''
+                    !isMobile && isVisible[index + 2] ? 'translate-y-0 opacity-100' : !isMobile ? 'translate-y-10 opacity-0' : 'opacity-100'
                   }`}
                 >
                   <div className="w-full md:w-1/2">
