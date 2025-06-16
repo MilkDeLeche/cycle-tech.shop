@@ -227,13 +227,13 @@ const Home: React.FC = () => {
             <p className="text-noir-600 mb-8 text-lg">
               Nuestro compromiso va más allá de la venta de bicicletas. Ofrecemos servicios de afinación de precisión, preparación para carreras y asesoramiento personalizado. Somos un punto de encuentro para la comunidad ciclista, organizando eventos, paseos en grupo y talleres que fomentan la conexión entre ciclistas.
             </p>
-            <a
-              href="/about"
+            <Link
+              to="/blog"
               className="btn btn-line mt-2"
             >
-              <span className="btn-caption">Conoce Nuestra Historia</span>
+              <span className="btn-caption">Nuestra Comunidad</span>
               <em></em>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
