@@ -87,7 +87,7 @@ const About: React.FC = () => {
     {
       title: "Centro de la Comunidad Ciclista",
       description: "Más que una tienda, somos un punto de encuentro para ciclistas de todos los niveles. Únete a nuestros eventos comunitarios, paseos en grupo y talleres. Estamos comprometidos a fomentar un ambiente acogedor donde los ciclistas puedan conectarse, aprender y crecer juntos.",
-      image: "/images/plazaexodo.jpg"
+      image: "/images/cafeycommunidad.jpeg"
     }
   ];
 
