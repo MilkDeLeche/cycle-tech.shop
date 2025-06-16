@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-noir-100 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center">
           <p className="text-xs sm:text-sm text-noir-400">
-            &copy; {new Date().getFullYear()} Matamoros Cycling Shop. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Cycle-Tech Bikes. Todos los derechos reservados.
           </p>
         </div>
       </div>

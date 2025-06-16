@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-medium mb-2">Visita Nuestra Tienda</h3>
-                    <p className="text-noir-600">Matamoros Cycling Shop</p>
+                    <p className="text-noir-600">Cycle-Tech Bikes</p>
                     <p className="text-noir-600">Av Francisco Villa entre Roberto Guerra y Rio Rhin</p>
                     <p className="text-noir-600">Treviño Zapata, 87430</p>
                     <p className="text-noir-600">Heroica Matamoros, Tamps., México</p>
@@ -175,7 +175,7 @@ const Contact: React.FC = () => {
                 </a>
               </div>
               <div className="mt-4 text-center">
-                <p className="text-noir-600 mb-2">Matamoros Cycling Shop</p>
+                <p className="text-noir-600 mb-2">Cycle-Tech Bikes</p>
                 <p className="text-noir-600">Av Francisco Villa entre Roberto Guerra y Rio Rhin</p>
                 <p className="text-noir-600">Treviño Zapata, 87430</p>
                 <p className="text-noir-600">Heroica Matamoros, Tamps., México</p>
