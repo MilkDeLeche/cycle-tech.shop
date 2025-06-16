@@ -3,9 +3,11 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import useScrollToTop from '../hooks/useScrollToTop';
+import { useIsMobile } from '../hooks/use-mobile';
 
 const About: React.FC = () => {
   useScrollToTop();
+  const isMobile = useIsMobile();
 
   const [isVisible, setIsVisible] = useState<boolean[]>([]);
 
@@ -101,7 +103,13 @@ const About: React.FC = () => {
           }`}
         >
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[url('/images/cycle-tech.svg')] bg-cover bg-center bg-no-repeat"></div>
+            <img 
+              src={isMobile ? "/images/formobile.svg" : "/images/cycle-tech.svg"}
+              alt="Cycle Tech Logo"
+              loading="eager"
+              fetchPriority="high"
+              className="w-full h-full object-cover"
+            />
           </div>
         </section>
 
@@ -116,8 +124,10 @@ const About: React.FC = () => {
                   data-section={`value-${index}`}
                   className={`flex flex-col ${
                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  } items-center gap-8 md:gap-16 transition-all duration-1000 ${
-                    isVisible[index + 2] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                  } items-center gap-8 md:gap-16 ${
+                    !isMobile ? 'transition-all duration-1000' : ''
+                  } ${
+                    !isMobile && isVisible[index + 2] ? 'translate-y-0 opacity-100' : !isMobile ? 'translate-y-10 opacity-0' : ''
                   }`}
                 >
                   <div className="w-full md:w-1/2">
@@ -140,7 +150,7 @@ const About: React.FC = () => {
           </div>
         </section>
 
-        {/* Team Section */}
+        {/* Team Section - Commented out for future use
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16">Nuestro Equipo</h2>
@@ -149,8 +159,10 @@ const About: React.FC = () => {
                 <div 
                   key={index}
                   data-section={`team-${index}`}
-                  className={`text-center transition-all duration-1000 ${
-                    isVisible[index + values.length + 2] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                  className={`text-center ${
+                    !isMobile ? 'transition-all duration-1000' : ''
+                  } ${
+                    !isMobile && isVisible[index + values.length + 2] ? 'translate-y-0 opacity-100' : !isMobile ? 'translate-y-10 opacity-0' : ''
                   }`}
                 >
                   <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gray-200">
@@ -169,12 +181,15 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
+        */}
 
         {/* CTA Section */}
         <section 
           data-section="cta"
-          className={`py-20 bg-noir-900 text-white transition-all duration-1000 ${
-            isVisible[values.length + teamMembers.length + 2] ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+          className={`py-20 bg-noir-900 text-white ${
+            !isMobile ? 'transition-all duration-1000' : ''
+          } ${
+            !isMobile && isVisible[values.length + teamMembers.length + 2] ? 'translate-y-0 opacity-100' : !isMobile ? 'translate-y-10 opacity-0' : ''
           }`}
         >
           <div className="container mx-auto px-4 text-center">
