@@ -49,14 +49,15 @@ const Blog: React.FC = () => {
           {/* Featured Article */}
           <div className="mb-16">
             <div className="relative h-[60vh] min-h-[400px] rounded-lg overflow-hidden mb-8">
-              <img 
-                src="/images/4.png" 
-                alt="Grupo de ciclistas en comunidad" 
-                className="w-full h-full object-cover"
-                loading="lazy"
-                width="1200"
-                height="800"
-              />
+              <div className="relative aspect-[16/9] overflow-hidden rounded-lg bg-gray-200">
+                <img 
+                  src="/images/4.png" 
+                  alt="Featured Article"
+                  loading="eager"
+                  fetchPriority="high"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-noir-900/80 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 text-white">
                 <span className="inline-block bg-white/20 text-white text-sm px-3 py-1 rounded-full mb-4">Destacado</span>
