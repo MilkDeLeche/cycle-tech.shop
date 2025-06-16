@@ -46,12 +46,12 @@ const Footer: React.FC = () => {
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-noir-600" />
                 <a 
-                  href="https://maps.app.goo.gl/your-location-link" 
+                  href="https://maps.app.goo.gl/Np7WH95yPCZTB45Z8?g_st=com.google.maps.preview.copy" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-noir-600 hover:text-noir-900 transition-colors"
                 >
-                  Plaza Éxodo, Matamoros, Tamaulipas
+                  Av Francisco Villa entre Roberto Guerra y Rio Rhin, Treviño Zapata, 87430, Heroica Matamoros, Tamps.
                 </a>
               </div>
               <div className="flex items-center gap-2">
