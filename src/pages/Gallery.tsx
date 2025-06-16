@@ -31,13 +31,13 @@ const Gallery: React.FC = () => {
           </p>
           <div className="w-full">
             <div data-behold-id="27dhdYeqGyj0JarchJLk"></div>
-          </div>
+            </div>
 
           <div className="mt-12 text-center">
-            <a
+            <a 
               href="https://www.instagram.com/cycletech.bikes/" 
-              target="_blank"
-              rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
             >
               <Instagram size={20} />
