@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-noir-600 hover:text-noir-900 transition-colors"
                 >
-                  Av Francisco Villa entre Roberto Guerra y Rio Rhin, Treviño Zapata, 87430, Heroica Matamoros, Tamps.
+                  Plaza Éxodo, Matamoros, Tamaulipas
                 </a>
               </div>
               <div className="flex items-center gap-2">
