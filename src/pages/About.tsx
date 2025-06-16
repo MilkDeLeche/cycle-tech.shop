@@ -96,12 +96,12 @@ const About: React.FC = () => {
         {/* Hero Section */}
         <section 
           data-section="hero"
-          className={`relative h-[50vh] md:h-[70vh] min-h-[300px] bg-noir-900 transition-opacity duration-1000 ${
+          className={`relative h-screen bg-noir-900 transition-opacity duration-1000 ${
             isVisible[0] ? 'opacity-100' : 'opacity-0'
           }`}
         >
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[url('/images/plazaexodo.jpg')] bg-cover md:bg-contain bg-center bg-no-repeat"></div>
+            <div className="absolute inset-0 bg-[url('/images/cycle-tech.svg')] bg-cover bg-center bg-no-repeat"></div>
           </div>
         </section>
 

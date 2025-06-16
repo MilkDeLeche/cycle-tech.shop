@@ -80,11 +80,11 @@ const Footer: React.FC = () => {
               >
                 <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
               </a>
-              <a 
-                href="https://www.facebook.com/people/Matamoros-Cycling-Shop/100061266284180/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-noir-500 hover:text-[#1877F2] transition-colors duration-300"
+              <a
+                href="https://www.facebook.com/people/CYCLE-TECH-BIKES/100061266284180/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-noir-600 hover:text-noir-900 transition-colors"
                 aria-label="Síguenos en Facebook"
               >
                 <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />

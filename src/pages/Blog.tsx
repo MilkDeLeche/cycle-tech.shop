@@ -85,11 +85,11 @@ const Blog: React.FC = () => {
           
           {/* Facebook Link Button */}
           <div id="facebook-section" className="text-center">
-            <a 
-              href="https://www.facebook.com/people/Matamoros-Cycling-Shop/100061266284180/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-block bg-[#1877F2] text-white px-8 py-4 text-lg font-medium rounded-md hover:bg-[#0d6efd] transition-colors"
+            <a
+              href="https://www.facebook.com/people/CYCLE-TECH-BIKES/100061266284180/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[#1877F2] hover:bg-[#0d6efd] transition-colors duration-300"
             >
               Síguenos en Facebook
             </a>

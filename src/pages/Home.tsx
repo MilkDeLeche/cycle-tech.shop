@@ -95,19 +95,19 @@ const Home: React.FC = () => {
       image: "/images/ct1.png",
       alt: "Producto Destacado 1",
       description: "¡Descubre nuestra selección premium de bicicletas!",
-      link: "/gallery"
+      link: "https://www.instagram.com/cycletech.bikes/"
     },
     {
       image: "/images/ct2.png",
       alt: "Producto Destacado 2",
       description: "Equipamiento de alta calidad para ciclistas exigentes",
-      link: "/gallery"
+      link: "https://www.instagram.com/cycletech.bikes/"
     },
     {
       image: "/images/ct3.png",
       alt: "Producto Destacado 3",
       description: "Accesorios y repuestos para tu bicicleta",
-      link: "/gallery"
+      link: "https://www.instagram.com/cycletech.bikes/"
     }
   ];
 
