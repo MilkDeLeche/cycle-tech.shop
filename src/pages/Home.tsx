@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import useEmblaCarousel from 'embla-carousel-react';
 import useScrollToTop from '../hooks/useScrollToTop';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   useScrollToTop();
@@ -108,6 +109,18 @@ const Home: React.FC = () => {
       alt: "Producto Destacado 3",
       description: "Accesorios y repuestos para tu bicicleta",
       link: "https://www.instagram.com/cycletech.bikes/"
+    },
+    {
+      image: "/images/ct4.png",
+      alt: "Producto Destacado 4",
+      description: "Servicio técnico especializado para tu bicicleta",
+      link: "https://www.instagram.com/cycletech.bikes/"
+    },
+    {
+      image: "/images/ct5.png",
+      alt: "Producto Destacado 5",
+      description: "Asesoría personalizada para ciclistas",
+      link: "https://www.instagram.com/cycletech.bikes/"
     }
   ];
 
@@ -176,16 +189,16 @@ const Home: React.FC = () => {
             </div>
 
             <div className="text-center mt-8">
-              <a 
-                href="/gallery" 
+              <Link 
+                to="/gallery" 
                 className="btn btn-line icon-right text-t-bright hover:text-t-medium font-medium text-btn lg:text-btn-lg xl:text-btn-xl 2xl:text-btn-2xl"
               >
                 <span className="btn-caption">Ver más</span>
                 <i className="text-btn-icon lg:text-btn-icon-lg xl:text-btn-icon-xl 2xl:text-btn-icon-2xl">
                   <ChevronRight />
                 </i>
-              </a>
-          </div>
+              </Link>
+            </div>
           </section>
         </div>
       </main>

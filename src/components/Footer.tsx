@@ -43,26 +43,38 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-base sm:text-lg font-display font-bold mb-3 sm:mb-4">Contacto</h3>
             <div className="space-y-3 sm:space-y-4">
-              <div className="flex items-start space-x-3 justify-center sm:justify-start">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mt-1 text-noir-500" />
-                <div className="text-left">
-                  <p className="text-xs sm:text-sm text-noir-500">Matamoros Cycling Shop</p>
-                  <p className="text-xs sm:text-sm text-noir-500">Av Francisco Villa entre Roberto Guerra y Rio Rhin</p>
-                  <p className="text-xs sm:text-sm text-noir-500">Treviño Zapata, 87430</p>
-                  <p className="text-xs sm:text-sm text-noir-500">Heroica Matamoros, Tamps., México</p>
-                </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-noir-600" />
+                <a 
+                  href="https://maps.app.goo.gl/your-location-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-noir-600 hover:text-noir-900 transition-colors"
+                >
+                  Plaza Éxodo, Matamoros, Tamaulipas
+                </a>
               </div>
-              <div className="flex items-center space-x-3 justify-center sm:justify-start">
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-noir-500" />
-                <p className="text-xs sm:text-sm text-noir-500">Lunes a Sabado: 10:00 AM - 7:00 PM</p>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-noir-600" />
+                <span className="text-noir-600">Lunes a Sábado: 10:00 AM - 8:00 PM</span>
               </div>
-              <div className="flex items-center space-x-3 justify-center sm:justify-start">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-noir-500" />
-                <p className="text-xs sm:text-sm text-noir-500">+52 123 456 7890</p>
+              <div className="flex items-center gap-2">
+                <Phone className="w-5 h-5 text-noir-600" />
+                <a 
+                  href="tel:+528681234567" 
+                  className="text-noir-600 hover:text-noir-900 transition-colors"
+                >
+                  +52 868 123 4567
+                </a>
               </div>
-              <div className="flex items-center space-x-3 justify-center sm:justify-start">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-noir-500" />
-                <p className="text-xs sm:text-sm text-noir-500">info@matamoroscyclingshop.com</p>
+              <div className="flex items-center gap-2">
+                <Mail className="w-5 h-5 text-noir-600" />
+                <a 
+                  href="mailto:info@cycletech.shop" 
+                  className="text-noir-600 hover:text-noir-900 transition-colors"
+                >
+                  info@cycletech.shop
+                </a>
               </div>
             </div>
           </div>
@@ -71,11 +83,11 @@ const Footer: React.FC = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <h3 className="text-base sm:text-lg font-display font-bold mb-3 sm:mb-4">Síguenos</h3>
             <div className="flex space-x-6 justify-center sm:justify-start">
-              <a 
-                href="https://www.instagram.com/matamoros_cyclingshop/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-noir-500 hover:text-[#E1306C] transition-colors duration-300"
+              <a
+                href="https://www.instagram.com/cycletech.bikes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-noir-600 hover:text-noir-900 transition-colors"
                 aria-label="Síguenos en Instagram"
               >
                 <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
