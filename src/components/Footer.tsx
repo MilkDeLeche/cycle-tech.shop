@@ -67,6 +67,7 @@ const Footer: React.FC = () => {
                   +52 868 465 3206
                 </a>
               </div>
+              {/* Email section commented out for future use
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-noir-600" />
                 <a 
@@ -76,6 +77,7 @@ const Footer: React.FC = () => {
                   info@cycletech.shop
                 </a>
               </div>
+              */}
             </div>
           </div>
 
