@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutSection: React.FC = () => {
   return (
@@ -28,13 +29,13 @@ const AboutSection: React.FC = () => {
             <p className="text-sm sm:text-base text-noir-600 mb-6 sm:mb-8 leading-relaxed">
               Nuestro compromiso va más allá de la venta de bicicletas. Ofrecemos servicios de afinación de precisión, preparación para carreras y asesoramiento personalizado. Somos un punto de encuentro para la comunidad ciclista, organizando eventos, paseos en grupo y talleres que fomentan la conexión entre ciclistas.
             </p>
-            <a 
-              href="/about" 
+            <Link 
+              to="/about" 
               className="inline-flex items-center justify-center px-6 py-2.5 bg-noir-900 text-white text-sm sm:text-base font-medium rounded-md hover:bg-noir-800 transition-colors duration-300"
               aria-label="Conoce nuestra historia"
             >
               Conoce Nuestra Historia
-            </a>
+            </Link>
           </div>
         </div>
       </div>
