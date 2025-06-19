@@ -104,7 +104,7 @@ const About: React.FC = () => {
         >
           <div className="absolute inset-0">
             <img 
-              src={isMobile ? "/images/formobile.svg" : "/images/cycle-tech.svg"}
+              src={isMobile ? "/images/cycle-techserviciosmobile.png" : "/images/cycle-techserviciospc.png"}
               alt="Cycle Tech Logo"
               loading="eager"
               fetchPriority="high"
